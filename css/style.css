@@ -9,10 +9,12 @@ body {
 }
 
 body {
-	background: #BDB76B url("../img/germany-city-landscape.jpg") no-repeat;
+	background: #BDB76B url("../img/germany-city-landscape.png") no-repeat;
 	font-family: "Lucida Grande" sans-serif;
 	font-size: 1em;
 	color: #FFFFFF;
+  min-width: 100%;
+  min-height: 100%
 }
 
 /*--------HEADER-------*/
@@ -50,6 +52,7 @@ h1 {
 .motiv {
   text-align: center;
   font-size: 1em;
+  margin: .2em auto;
 }
 
 section {
@@ -125,6 +128,7 @@ input:focus::-webkit-input-placeholder {
 article {
   text-align: center;
   vertical-align: middle;
+  margin: .2em;
   /*background-color: #BC8F8F;
   opacity: 0.8; /* Степень прозрачности */
 }
