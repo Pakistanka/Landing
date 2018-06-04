@@ -47,7 +47,7 @@ h1 {
   flex-wrap: wrap;
 }
 
-.content > p {
+.motiv {
   text-align: center;
   font-size: 1em;
 }
@@ -61,7 +61,7 @@ form {
   min-height: 30%;
   text-align: center;
   padding: .3em;
-  margin: .4em;
+  margin: 1em;
 }
 
 .email {
@@ -89,11 +89,10 @@ form {
 #button:hover {
 	background: linear-gradient(to top, #87CEEB, #4169E0, navy);
 	background: -webkit-linear-gradient(to top, #87CEEB, #4169E0, navy); /*для Chrome, Safari*/
-	background: -moz-linear-gradient(to top, #87CEEB, #4169E0, navy); /*для Firefox*/
-	
+	background: -moz-linear-gradient(to top, #87CEEB, #4169E0, navy); /*для Firefox*/	
 }
 
-.container .button:active {
+#button:active {
 	background: navy;	
 }
 
@@ -110,73 +109,45 @@ input:focus::-webkit-input-placeholder {
   color: transparent;
 }
 
-
-.antispam {
-	text-align: center;
-	font-family: "Lucida Grande";
-	font-size: 1em;
-	line-height: 16px;
-	color: #fff;
-	margin-top: 2px;
-	margin-bottom: 10px;
-	padding-bottom: 5px;
-	
-}
-
-
 /*--------COURSE DESCRIPTION---------*/
-
-.clearfix::after {
-    display: table;
-    content: "";
-    clear: both;
-}
 
 .list {
 	width: 100%;
-	height: 60px;
 	color: #FFFFFF;
 	border: none;
-	text-align: center;
 	font-family: "Lucida Grande";
-	font-size: 16px;
-	display: inline-block;
+	font-size: 1em;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article {
+  text-align: center;
+  vertical-align: middle;
+  /*background-color: #BC8F8F;
+  opacity: 0.8; /* Степень прозрачности */
+}
+
+article:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+.item-1 {
+  flex-grow: 1;
+}
+
+.item-2 {
+  flex-grow: 2;
+}
+
+.item-3 {
+  flex-grow: 3;
 }
 
 
-
-.column {
-	float: left;
-	width: 30%;
-	margin-top: 30px;
-	margin-left: 30px;
-	overflow: hidden;
-	-moz-transition: all 1s ease-out;
- 	-o-transition: all 1s ease-out;
- 	-webkit-transition: all 1s ease-out;
-	/*background-color: #BC8F8F; /* Чёрный фон */
-    /*opacity: 0.80; /* Степень прозрачности */
-    /*position: fixed; /* Фиксированное положение */
-	/*border-radius: 5px;*/
-	
-}
-
-.column:hover {
-	-webkit-transform: scale(1.1);
- 	-moz-transform: scale(1.1);
- 	-o-transform: scale(1.1);
-}
-
-
-.text h2 {
-	font-size: 1.25em;
-	line-height: 20px;
-	text-decoration: underline;
-	margin: none;
-	padding: none;
-	width: 100%;
-	z-index: 100;
-}
 
 .text p {
 	font-family: "Lucida Grande";
@@ -193,3 +164,9 @@ input:focus::-webkit-input-placeholder {
 
 
 /*-------FOOTER------*/
+
+footer {
+  text-align: center;
+  font-size: 1em;
+  margin-top: 1em;
+}
